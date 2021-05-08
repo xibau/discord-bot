@@ -1,12 +1,13 @@
 
 import os
+from dotenv import load_dotenv
 import discord
 import asyncio
 nickedUser = {}
 nickedReason = {}
+load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
 
-
-TOKEN = 'ODQwMzAyMjA0Mjk5OTAyOTk3.YJWOaQ.W6qhix3K8_NNRu8wNv34anSmu7M'
 client = discord.Client()
 
 @client.event
