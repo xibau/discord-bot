@@ -19,7 +19,7 @@ async def on_message(message):
 	if message.content.startswith('!rename'):
 		if message.mentions:
 			nickedUser = message.mentions[0].id
-			nickReason = message.content[len(str(nickedUser)) + 13:]
+			nickReason = message.content[len(str(nickedUser)) + 12:]
 			await message.mentions[0].edit(nick=nickReason)
 			await message.delete()
 		else :
