@@ -1,10 +1,10 @@
-
 import os
 from dotenv import load_dotenv
 import discord
 import asyncio
-nickedUser = {}
+
 nickedReason = {}
+
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
@@ -18,7 +18,6 @@ async def on_ready():
 async def on_message(message):
 	if message.content.startswith('!rename'):
 		if message.mentions:
-			nickedUser = message.mentions[0].id
 			nickReason = message.content[len(str(nickedUser)) + 12:]
 			await message.mentions[0].edit(nick=nickReason)
 			await message.delete()
