@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 import discord
 import asyncio
+import psycopg2
 import cred as cr
 
 nickedReason = {}
