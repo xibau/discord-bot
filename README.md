@@ -5,6 +5,7 @@ You can also rename yourself by just typing !rename nick
 
 The bot need to have a rank higher than the user you wish to rename
 
-Also able to post who deleted an emoji by posting the user and the emoji name
+WIP : emoji stats to post what are the most used stickers on the server, and delete the ones that are never used. Post when someone delete a sticker, with the username and the sticker's ID
+
 
 
